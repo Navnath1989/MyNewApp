@@ -18,7 +18,7 @@ public class ShowDataActivity extends AppCompatActivity {
     public static final String images = "image";
 
     String strSpecil = "It is a long established fact that a reader will be " +
-            "distracted by the # readable @ content ^ of a < > page  =  & $ when looking at its layout";
+            "distracted by the # readable @ content ^ of a < > page  =  & $ when looking at its layoutttt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
