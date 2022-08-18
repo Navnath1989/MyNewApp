@@ -19,6 +19,7 @@ public interface ApiInterface {
     //Call<Object> getGenralInfo();
     Call<List<BasicInfoBean>> getHeroes();
 
+    //Naganath Hadapad
 
     //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
 }
