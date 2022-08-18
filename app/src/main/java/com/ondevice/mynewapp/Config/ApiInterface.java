@@ -18,4 +18,7 @@ public interface ApiInterface {
     @GET("demos/marvel")
     //Call<Object> getGenralInfo();
     Call<List<BasicInfoBean>> getHeroes();
+
+
+    //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
 }
