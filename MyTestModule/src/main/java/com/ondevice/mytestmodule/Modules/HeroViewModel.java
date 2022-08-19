@@ -41,7 +41,6 @@ public class HeroViewModel extends ViewModel {
         NameToastInfo.setValue("Nagnath Hadapad");
         //NameToastInfo.postValue("Name IS");
 
-
         //finally we will return the list
         return NameToastInfo;
     }
