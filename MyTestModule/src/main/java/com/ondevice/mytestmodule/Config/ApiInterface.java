@@ -1,9 +1,8 @@
-package com.ondevice.mynewapp.Config;
+package com.ondevice.mytestmodule.Config;
 
-import com.ondevice.mynewapp.Beans.BasicInfoBean;
+import com.ondevice.mytestmodule.Beans.BasicInfoBean;
 
 import java.util.List;
-import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

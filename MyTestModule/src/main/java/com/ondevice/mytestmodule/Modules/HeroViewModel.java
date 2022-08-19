@@ -1,12 +1,12 @@
-package com.ondevice.mynewapp;
+package com.ondevice.mytestmodule.Modules;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
-import com.ondevice.mynewapp.Beans.BasicInfoBean;
-import com.ondevice.mynewapp.Config.Api;
-import com.ondevice.mynewapp.Config.ApiInterface;
+import com.ondevice.mytestmodule.Beans.BasicInfoBean;
+import com.ondevice.mytestmodule.Config.Api;
+import com.ondevice.mytestmodule.Config.ApiInterface;
 
 import java.util.List;
 
@@ -17,6 +17,9 @@ import retrofit2.Response;
 public class HeroViewModel extends ViewModel {
 
     private MutableLiveData<List<BasicInfoBean>> heroList;
+
+    private MutableLiveData<String> NameToastInfo;
+    private MutableLiveData<String> NameToastNm;
 
     //we will call this method to get the data
     public LiveData<List<BasicInfoBean>> getHeroes() {
@@ -29,6 +32,18 @@ public class HeroViewModel extends ViewModel {
 
         //finally we will return the list
         return heroList;
+    }
+
+    public LiveData<String> getToastInfo() {
+        //if the list is null
+
+        NameToastInfo = new MutableLiveData<String>();
+        NameToastInfo.setValue("Nagnath Hadapad");
+        //NameToastInfo.postValue("Name IS");
+
+
+        //finally we will return the list
+        return NameToastInfo;
     }
 
     //This method is using Retrofit to get the JSON data from URL
@@ -47,9 +62,9 @@ public class HeroViewModel extends ViewModel {
             @Override
             public void onFailure(Call<List<BasicInfoBean>> call, Throwable t) {
 
+                System.out.println("Data Not Valid!"+ t.toString());
             }
         });
-
 
     }
 }

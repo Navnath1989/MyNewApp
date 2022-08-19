@@ -1,4 +1,4 @@
-package com.ondevice.mynewapp.Config;
+package com.ondevice.mytestmodule.Config;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

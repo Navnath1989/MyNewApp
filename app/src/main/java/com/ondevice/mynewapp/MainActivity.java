@@ -1,7 +1,6 @@
 package com.ondevice.mynewapp;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +9,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.ondevice.mynewapp.Adapters.BasicInfoAdapter;
-import com.ondevice.mynewapp.Beans.BasicInfoBean;
+import com.ondevice.mytestmodule.Beans.BasicInfoBean;
+import com.ondevice.mytestmodule.Modules.HeroViewModel;
 
 import java.util.List;
 
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 rvBasicInfo.setAdapter(basicInfoAdapter);
             }
         });
+
 
     }
 }

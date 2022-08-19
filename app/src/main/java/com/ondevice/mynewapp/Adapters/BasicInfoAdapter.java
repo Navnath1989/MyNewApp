@@ -12,10 +12,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.ondevice.mynewapp.Beans.BasicInfoBean;
-import com.ondevice.mynewapp.MainActivity;
 import com.ondevice.mynewapp.R;
 import com.ondevice.mynewapp.ShowDataActivity;
+import com.ondevice.mytestmodule.Beans.BasicInfoBean;
 
 import java.util.List;
 
@@ -64,6 +63,7 @@ public class BasicInfoAdapter extends RecyclerView.Adapter<BasicInfoAdapter.View
                 i.putExtra("abcd", items.getName());
                 i.putExtra("image", items.getImageurl());
                 contxt.startActivity(i);
+
             }
         });
 

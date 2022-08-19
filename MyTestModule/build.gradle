@@ -1,18 +1,16 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.ondevice.mynewapp"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -30,18 +28,11 @@ android {
 dependencies {
 
     implementation 'com.android.support:appcompat-v7:+'
-    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    /*implementation 'com.squareup.retrofit2:retrofit:4.2.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
-    implementation 'com.google.code.gson:gson:2.7.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'*/
 
     implementation 'com.android.support:support-v4:+'
+
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.okhttp3:okhttp:3.1.2'
@@ -54,7 +45,4 @@ dependencies {
 
     implementation "android.arch.lifecycle:extensions:1.1.0"
     implementation "android.arch.lifecycle:viewmodel:1.1.0"
-
-    implementation project(':MyTestModule')
-
 }

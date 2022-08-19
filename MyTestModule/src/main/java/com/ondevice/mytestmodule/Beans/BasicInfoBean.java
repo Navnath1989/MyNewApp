@@ -1,4 +1,4 @@
-package com.ondevice.mynewapp.Beans;
+package com.ondevice.mytestmodule.Beans;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
