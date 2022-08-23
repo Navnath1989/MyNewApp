@@ -18,11 +18,13 @@ public interface ApiInterface {
     //Call<Object> getGenralInfo();
     Call<List<BasicInfoBean>> getHeroes();
 
+    @GET("getownerslist/2021-01-16/payments/owner")
+        //Call<Object> getGenralInfo();
+    Call<List<BasicInfoBean>> getExamplUrl();
+
     //Naganath Hadapad
 
     //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
-
-    // nagnnannahhh dhhd
 
     //fjdaljljfdlsjfljfdsfsdffsadfdfhahkhakdhkhakdkhdfhk
 }

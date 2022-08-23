@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Api {
 
-    //public static final String BASE_URL = "https://newsapi.org/v2/";
+    //public static final String BASE_URL = "https://fssservices.bookxpert.co/api/";
     public static final String BASE_URL = "https://www.simplifiedcoding.net/";
 
     public static Retrofit getClient(){

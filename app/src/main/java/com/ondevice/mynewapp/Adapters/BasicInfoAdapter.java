@@ -53,8 +53,8 @@ public class BasicInfoAdapter extends RecyclerView.Adapter<BasicInfoAdapter.View
         Glide.with(contxt)
                 .load(items.getImageurl())
                 .into(holder.imgBasic);
-
         holder.txtBasicName.setText(items.getName());
+        //holder.txtBasicName.setText(items.getActName());
 
         holder.llShowData.setOnClickListener(new View.OnClickListener() {
             @Override

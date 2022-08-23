@@ -30,7 +30,12 @@ public class BasicInfoBean {
     @Expose
     private String bio;
 
-    public BasicInfoBean(String name, String realname, String team, String firstappearance, String createdby, String publisher, String imageurl, String bio) {
+    @SerializedName("ActName")
+    @Expose
+    private String ActName;
+
+    public BasicInfoBean(String name, String realname, String team, String firstappearance, String createdby,
+                         String publisher, String imageurl, String bio, String ActName) {
         this.name = name;
         this.realname = realname;
         this.team = team;
@@ -39,6 +44,16 @@ public class BasicInfoBean {
         this.publisher = publisher;
         this.imageurl = imageurl;
         this.bio = bio;
+        this.ActName = ActName;
+    }
+
+
+    public String getActName() {
+        return ActName;
+    }
+
+    public void setActName(String actName) {
+        ActName = actName;
     }
 
     public String getName() {

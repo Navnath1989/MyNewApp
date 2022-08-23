@@ -4,6 +4,7 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 
+import com.google.gson.Gson;
 import com.ondevice.mytestmodule.Beans.BasicInfoBean;
 import com.ondevice.mytestmodule.Config.Api;
 import com.ondevice.mytestmodule.Config.ApiInterface;
@@ -51,11 +52,15 @@ public class HeroViewModel extends ViewModel {
         ApiInterface api = Api.getClient().create(ApiInterface.class);
         //Call<Object> call = api.getHeroes();
         Call<List<BasicInfoBean>> call = api.getHeroes();
+        //Call<List<BasicInfoBean>> call = api.getExamplUrl();
 
         call.enqueue(new Callback<List<BasicInfoBean>>() {
             @Override
             public void onResponse(Call<List<BasicInfoBean>> call, Response<List<BasicInfoBean>> response) {
                 heroList.setValue(response.body());
+
+                String resp = new Gson().toJson(response.body());
+                System.out.println("Print Res Nav: "+ resp);
             }
 
             @Override
