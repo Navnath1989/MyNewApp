@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<BasicInfoBean> heroList) {
                 basicInfoAdapter = new BasicInfoAdapter(MainActivity.this, heroList);
-                rvBasicInfo.setAdapter(basicInfoAdapter);
+                rvBasicInfo.setAdapter(basicInfoAdapter);///fndalfjsd
             }
         });
 
